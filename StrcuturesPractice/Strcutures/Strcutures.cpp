@@ -8,14 +8,25 @@ using namespace std;
 struct Rectangle {
     int length; 
     int breadth;
+    char x; // allocating 4 but using only 1
 };
 
 int main()
 {
+    // init
     Rectangle r1 = { 10,5 }; 
 
-    cout << sizeof(r1) << endl;
-    cout << r1.breadth * r1.length << endl;
+    // Access members
+    r1.length = 15;
+    r1.breadth = 7;
+
+    cout << r1.length << endl;
+    cout << r1.breadth << endl;
+
+    /*cout << sizeof(r1) << endl;
+    cout << r1.breadth * r1.length << endl;*/
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
